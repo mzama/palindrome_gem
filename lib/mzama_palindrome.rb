@@ -11,7 +11,7 @@ class String
 
     #Returns content for palindrone testing
     def processed_content
-      self.scan(/[a-zA-Z0-9]/).join.downcase
+      scan(/[a-z0-9]/i).join.downcase
     end
 
 end
