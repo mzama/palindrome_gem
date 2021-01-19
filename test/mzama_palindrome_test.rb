@@ -29,4 +29,12 @@ class MzamaPalindromeTest < Minitest::Test
     assert_equal "12thisisatest", "1, 2, this IS a/ 'TEST'.".send(:processed_content)
   end
 
+  def test_integer_non_palindrome
+    refute 12345.palindrome?
+  end
+
+  def test_integer_palindrome
+    assert 12321.palindrome?
+  end
+
 end
