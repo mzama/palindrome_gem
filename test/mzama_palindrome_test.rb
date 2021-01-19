@@ -25,4 +25,8 @@ class MzamaPalindromeTest < Minitest::Test
     assert "Madam, I'm Adam".palindrome?
   end
 
+  def test_processed_content
+    assert_equal "12thisisatest", "1, 2, this IS a/ 'TEST'.".send(:processed_content)
+  end
+
 end
